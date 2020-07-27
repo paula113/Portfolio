@@ -10,8 +10,36 @@ const data = [
   },
   {
     name: 'Red Social',
-    image: 'https://github.com/paula113/LIM012-fe-social-network/blob/gh-pages/src/img/logIn.png?raw=true',
+    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-26%20at%2011.16.53%20pm.png?raw=true',
     descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
+    github: 'https://github.com/paula113/LIM012-fe-social-network',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+  },
+  {
+    name: 'Cifrado Casar',
+    image: 'https://unsplash.it/700/500?random',
+    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
+    github: 'https://github.com/paula113/LIM012-fe-social-network',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+  },
+  {
+    name: 'Red Social',
+    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-26%20at%2011.16.53%20pm.png?raw=true',
+    descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
+    github: 'https://github.com/paula113/LIM012-fe-social-network',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+  },
+  {
+    name: 'Cifrado Casar',
+    image: 'https://unsplash.it/700/500?random',
+    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
+    github: 'https://github.com/paula113/LIM012-fe-social-network',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+  },
+  {
+    name: 'Cifrado Casar',
+    image: 'https://unsplash.it/700/500?random',
+    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
@@ -29,6 +57,16 @@ const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/mast
 
 const skillsList = ['https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
+  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
+  'https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
+  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
+  'https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
+  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
 ];
 // 'https://unsplash.it/700/500?random'
 
@@ -54,7 +92,7 @@ const renderImage = (str, name) => {
 
 
 // returns an iterable for promise all
-const iterable = arr => arr.map(icon => renderImage(icon, 'icons'));
+const iterable = (arr, name) => arr.map(icon => renderImage(icon, name));
 // appens all img to html
 const renderIcons = (arr, section) => Promise.all(arr)
   .then(yes => yes.forEach(element => section.appendChild(element)));
@@ -100,8 +138,8 @@ const gallery = p => p.map((obj) => {
 });
 
 
-const icons = iterable(contactIcons);
-const skilsIscons = iterable(skillsList);
+const icons = iterable(contactIcons, 'icons');
+const skilsIscons = iterable(skillsList, 'skillsIcons');
 
 main.appendChild(profile);
 profile.appendChild(perfil(sayHi, 'sayHi'));
@@ -114,5 +152,5 @@ skills.innerHTML = '<h1 class="title">Habilidades</h1>';
 skills.appendChild(skillsContainer);
 renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
-projects.appendChild(title);
+skills.appendChild(title);
 gallery(data);

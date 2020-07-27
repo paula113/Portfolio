@@ -37,7 +37,7 @@ a {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #27168C;
   }
   
   .header .logo {
@@ -78,7 +78,6 @@ a {
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    /* border: 3px solid cornsilk; */
     background: cornsilk;
     content: '';
     display: block;
@@ -140,6 +139,7 @@ h6{
     margin-top: 1rem;
     width: 15rem;
     height: 15rem;
+    object-fit:cover; 
     border-radius: 100%;
 }
 .icons{
@@ -151,6 +151,7 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aquamarine;
 }
 .title{
     color: #27168C;
@@ -189,7 +190,8 @@ h6{
 }
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     align-items: center;
     background-color: darkseagreen;
     padding-top: 1rem;
@@ -197,8 +199,7 @@ h6{
 }
 /* ------------ */
 .article{
-
-    margin: 3rem;
+    margin: 2rem;
     border: 2px solid #6A8594;
     text-align: center;
     background-color: aliceblue;
@@ -211,11 +212,20 @@ h6{
     0 100px 80px rgba(0, 0, 0, 0.12)
 
 }
+.see_pro{
+    margin: 1rem;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid purple; */
+}
 .p_img{
-    /* width: 20rem;
-    height: 15rem; */
-    width:100%; 
-    height:100%; 
+    width: 100%;
+    height: 50%;
+    /* height: 15rem; */
+    /* width:100%; 
+    height:100%;  */
     object-fit:cover; 
 }
 .button{
@@ -254,6 +264,75 @@ h6{
     .header .menu-icon {
       display: none;
     }
-  }
+}
+@media (min-width: 850px) {
+    .sayHi{
+        position: relative;
+        right: 15%;
+        top: 20%;
+        padding: 0;
+        margin: 0;
+    }
+    h6{
+        text-align: left;
+    }
+    .title{
+        margin: 0;
+        font-size: 3rem;
+    }
+
+   .profile{
+    height: 40%;
+   }
+   .contact {
+    background-color: brown;
+    position: relative;
+    left: 20%;
+    top: 15%;
+   }
+   .myPic{
+    margin: 0%;
+    position: relative;
+    left: 20%;
+    top: 15%;
+    border-radius: 0%;
+} 
+.descDiv {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    right: 40%;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article{
+    width: 25%;
+    /* height: 30%; */
+}
+.p_img{
+    /* height: 20rem; */
+
+    /* margin: 1rem; */
+    /* height: 400px; */
+    object-fit:cover; 
+
+}
+.projects{
+    padding: 3rem;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+.ps{
+    position: relative;
+    bottom: 43rem;
+    right: 50%;
+}
+/* .description{
+    width: ;
+} */
   
 

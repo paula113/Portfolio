@@ -4,25 +4,25 @@ const data = [
   {
     name: 'Cifrado Casar',
     image: 'https://unsplash.it/700/500?random',
-    descripton: '.....',
+    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'paula113.github.io/lim012-fe-social-network/src/',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
   {
     name: 'Red Social',
-    image: 'https://unsplash.it/700/500?random',
-    descripton: '.....',
+    image: 'https://github.com/paula113/LIM012-fe-social-network/blob/gh-pages/src/img/logIn.png?raw=true',
+    descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'paula113.github.io/lim012-fe-social-network/src/',
+    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
 ];
 
 const main = document.getElementById('main_content');
 
 const myDescription = 'Junior Front-End developer apasionada por el desarrollo de interfaces web. He desarrollado proyectos en puro JavaScript y React, utilizando scrum como framework de desarrollo. Mi objetivo es crear productos que resuelvan problemas potenciando su eficiencia y productividad.';
-const myPic = 'https://cdnuploads.aa.com.tr/uploads/Contents/2020/05/14/thumbs_b_c_88bedbc66bb57f0e884555e8250ae5f9.jpg?v=140708';
+const myPic = 'https://github.com/paula113/Portfolio/blob/master/images/pic0012.jpeg?raw=true';
 // List of Icons
-const contactIcons = ['https://image.flaticon.com/icons/png/512/174/174855.png',
+const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedin-brands.svg',
   'https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-512.png',
   'https://unsplash.it/700/500?random',
 ];
@@ -38,12 +38,10 @@ const sayHi = `
 <h1 class="title">Paula Paredes</h1>
 `;
 
-// menu
-
-
 // Body
-const perfil = (template) => {
-  const section = document.createElement('section');
+const perfil = (template, name) => {
+  const section = document.createElement('div');
+  section.className = name;
   section.innerHTML = template;
   return section;
 };
@@ -62,7 +60,7 @@ const renderIcons = (arr, section) => Promise.all(arr)
   .then(yes => yes.forEach(element => section.appendChild(element)));
 
 
-const profile = document.createElement('div');
+const profile = document.createElement('section');
 profile.setAttribute('id', 'Sobre mi');
 profile.className = 'profile';
 
@@ -70,10 +68,10 @@ const contact = document.createElement('div');
 contact.className = 'contact';
 
 const skills = document.createElement('section');
+skills.setAttribute('id', 'Habilidades');
 skills.className = 'skills';
 
 const skillsContainer = document.createElement('div');
-skillsContainer.setAttribute('id', 'Habilidades');
 skillsContainer.className = 'skillsContainer';
 
 const projects = document.createElement('section');
@@ -81,7 +79,7 @@ projects.setAttribute('id', 'Proyectos');
 projects.className = 'projects';
 
 const title = document.createElement('h1');
-title.className = 'title';
+title.className = 'title ps';
 title.textContent = 'Proyectos';
 
 const gallery = p => p.map((obj) => {
@@ -91,11 +89,11 @@ const gallery = p => p.map((obj) => {
     <img class="p_img" src=${obj.image}/>
         <h4>${obj.name}</h4>
         <p class="caption">${obj.descripton}</p>
-    <div class="contact">
+    <div class="see_pro">
     <a href=${obj.github}>
-    <img class="icons" src="https://unsplash.it/700/500?random">
+    <img class="icons" src="https://raw.githubusercontent.com/paula113/Portfolio/master/images/github-brands.svg">
     </a>
-    <a class="button" href=${obj.demo} target="_blank">DEMO</a>
+    <a class="button" href=${obj.demo} target="_blank">Demo</a>
     </div>
     `;
   return projects.appendChild(card);
@@ -105,12 +103,12 @@ const gallery = p => p.map((obj) => {
 const icons = iterable(contactIcons);
 const skilsIscons = iterable(skillsList);
 
-main.appendChild(perfil(sayHi));
 main.appendChild(profile);
+profile.appendChild(perfil(sayHi, 'sayHi'));
 profile.appendChild(renderImage(myPic, 'myPic'));
 profile.appendChild(contact);
 renderIcons(icons, contact);
-main.appendChild(perfil(description));
+profile.appendChild(perfil(description, 'descDiv'));
 main.appendChild(skills);
 skills.innerHTML = '<h1 class="title">Habilidades</h1>';
 skills.appendChild(skillsContainer);
@@ -118,4 +116,3 @@ renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 projects.appendChild(title);
 gallery(data);
-// projects.appendChild(gallery);

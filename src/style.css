@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 a {
-    color: cornsilk;
+    color: white;
   }
   
   /* header */
   
   .header {
-    background-color: cornflowerblue;
+    background-color: #6A8594;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
@@ -24,7 +24,7 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: cornflowerblue;
+    background-color: #6A8594;
 
   }
   

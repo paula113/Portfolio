@@ -55,18 +55,13 @@ const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/mast
   'https://unsplash.it/700/500?random',
 ];
 
-const skillsList = ['https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
-  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
-  'https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
-  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
-  'https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7uZ1qJxnO65vIEoEKjWxCUfjd-Xe5SqH8Zw&usqp=CAU',
-  'https://cdn4.iconfinder.com/data/icons/weather-line-high-resolution/32/the_weather-line_home_house_rumah-512.png',
+const skillsList = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/reactSvg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/css-Svg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/node-Svg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/Js-Svg(1).svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/html-Svg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/firebase-Svg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/sql-Svg.svg',
 ];
 // 'https://unsplash.it/700/500?random'
 

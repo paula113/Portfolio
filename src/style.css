@@ -191,6 +191,7 @@ h6{
 .skillsIcons{
     width: 150px;
     height: 150px;
+    margin: .5rem;
     /* object-fit:cover;  */
 }
 .projects {

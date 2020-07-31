@@ -10,7 +10,7 @@ const data = [
   },
   {
     name: 'Red Social',
-    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-26%20at%2011.16.53%20pm.png?raw=true',
+    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen Shot 2020-07-31 at 1.12.59 pm.png',
     descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
@@ -50,15 +50,15 @@ const main = document.getElementById('main_content');
 const myDescription = 'Junior Front-End developer apasionada por el desarrollo de interfaces web. He desarrollado proyectos en puro JavaScript y React, utilizando scrum como framework de desarrollo. Mi objetivo es crear productos que resuelvan problemas potenciando su eficiencia y productividad.';
 const myPic = 'https://github.com/paula113/Portfolio/blob/master/images/pic0012.jpeg?raw=true';
 // List of Icons
-const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedin-brands.svg',
-  'https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-512.png',
-  'https://unsplash.it/700/500?random',
+const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/mail.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/gitHub.svg',
 ];
 
 const skillsList = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/reactSvg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/css-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/node-Svg.svg',
-  'https://github.com/paula113/Portfolio/blob/master/images/Screen Shot 2020-07-31 at 1.01.16 pm.png',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/Screen%20Shot%202020-07-31%20at%201.01.16%20pm.png',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/html-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/firebase-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/sql-Svg.svg',
@@ -124,7 +124,7 @@ const gallery = p => p.map((obj) => {
         <p class="caption">${obj.descripton}</p>
     <div class="see_pro">
     <a href=${obj.github}>
-    <img class="icons" src="https://raw.githubusercontent.com/paula113/Portfolio/master/images/github-brands.svg">
+    <img class="icons" src="https://raw.githubusercontent.com/paula113/Portfolio/master/images/gitHub.svg">
     </a>
     <a class="button" href=${obj.demo} target="_blank">Demo</a>
     </div>

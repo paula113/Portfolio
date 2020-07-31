@@ -10,39 +10,32 @@ const data = [
   },
   {
     name: 'Red Social',
-    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen Shot 2020-07-31 at 1.12.59 pm.png',
-    descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
+    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-31%20at%201.12.59%20pm.png?raw=true',
+    // descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
   {
-    name: 'Cifrado Casar',
+    name: 'md-Links',
+    image: 'https://github.com/paula113/LIM012-fe-md-links/blob/master/img/--vaidate.png?raw=true',
+    // descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
+    github: 'https://github.com/paula113/LIM012-fe-md-links',
+    demo: 'https://github.com/paula113/LIM012-fe-md-links',
+  },
+  {
+    name: 'BQ-API',
     image: 'https://unsplash.it/700/500?random',
-    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
   {
-    name: 'Red Social',
-    image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-26%20at%2011.16.53%20pm.png?raw=true',
-    descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
-    github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
-  },
-  {
-    name: 'Cifrado Casar',
+    name: 'BQ-API Client',
     image: 'https://unsplash.it/700/500?random',
-    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
+    // descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
-  {
-    name: 'Cifrado Casar',
-    image: 'https://unsplash.it/700/500?random',
-    descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
-    github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
-  },
+  
 ];
 
 const main = document.getElementById('main_content');
@@ -132,6 +125,8 @@ const gallery = p => p.map((obj) => {
   return projects.appendChild(card);
 });
 
+// const collaboration = 'https://github.com/paula113/Portfolio/blob/master/images/collap.svg';
+
 
 const icons = iterable(contactIcons, 'icons');
 const skilsIscons = iterable(skillsList, 'skillsIcons');
@@ -142,9 +137,11 @@ profile.appendChild(renderImage(myPic, 'myPic'));
 profile.appendChild(contact);
 renderIcons(icons, contact);
 profile.appendChild(perfil(description, 'descDiv'));
+// main.appendChild(collaboration);
 main.appendChild(skills);
 skills.innerHTML = '<h1 class="title">Habilidades</h1>';
 skills.appendChild(skillsContainer);
+skills.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/collabs.png', 'webScan'));
 renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 skills.appendChild(title);

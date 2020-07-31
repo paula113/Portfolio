@@ -184,7 +184,8 @@ h6{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 2px solid #6A8594;
+    border: 3px solid #27168C;
+    box-sizing: border-box;
     margin: 3rem;
     padding: 1rem;
 }
@@ -314,8 +315,8 @@ h4{
 .descDiv {
     width: 30%;
     position: absolute;
-    top: 30%;
-    right: 40%;
+    top: 13rem;
+    left: 25%;
 }
 .gallery{
     display: flex;
@@ -331,6 +332,9 @@ h4{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: yellowgreen;
 }
+/* .webScan{
+  background: url(undraw_real_time_collaboration_c62i.png);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+} */
 

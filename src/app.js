@@ -40,7 +40,7 @@ const data = [
 
 const main = document.getElementById('main_content');
 
-const myDescription = 'Junior Front-End developer apasionada por el desarrollo de interfaces web. He desarrollado proyectos en puro JavaScript y React, utilizando scrum como framework de desarrollo. Mi objetivo es crear productos que resuelvan problemas potenciando su eficiencia y productividad.';
+const myDescription = 'Front-End developer apasionada por el desarrollo de interfaces web. He desarrollado proyectos en puro JavaScript y React, utilizando scrum como framework de desarrollo. Mi objetivo es crear productos que resuelvan problemas potenciando su eficiencia y productividad.';
 const myPic = 'https://github.com/paula113/Portfolio/blob/master/images/pic0012.jpeg?raw=true';
 // List of Icons
 const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg',
@@ -140,8 +140,8 @@ profile.appendChild(perfil(description, 'descDiv'));
 main.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/collabs.png?raw=true', 'collabs'));
 main.appendChild(skills);
 skills.innerHTML = '<h1 class="title">Habilidades</h1>';
+skills.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/web_scan.png?raw=true', 'webScan'));
 skills.appendChild(skillsContainer);
-skills.appendChild(renderImage('', 'webScan'));
 renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 skills.appendChild(title);

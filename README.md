@@ -15,7 +15,7 @@ Working in a team, I help to set a more clear feeling of direction with an effec
 
 ***
 
-#### Skills
+## Skills
 
 - Autodidactic
 - Problem Solver
@@ -25,14 +25,14 @@ Working in a team, I help to set a more clear feeling of direction with an effec
 
 ***
 
-#### Projects
+## Projects
 
-### Social Network:
+#### Social Network:
 - [EducaChat](https://github.com/paula113/LIM012-fe-social-network) was developed for puzzled students attempting to find reliable resorces to solve their uncertainty. Moreover, it is for experience professional to convey their skills and knowledge.
 
 ![RED SOCIAL](https://user-images.githubusercontent.com/60791273/81744247-9412ef80-9468-11ea-99af-e70fe69713ff.png)
 
-### Md-Links:
+#### Md-Links:
 -  [Md-Links](https://github.com/paula113/LIM012-fe-md-links) is a library design to validate links in a markdown file. It was build for developers who will need to retrieve links from a directory with several varieties types of files. Md-Links, provides options to give more information about it.
 
 ![MD-LINKS](https://github.com/paula113/LIM012-fe-md-links/blob/master/img/--vaidate.png?raw=true)

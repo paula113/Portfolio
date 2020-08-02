@@ -3,7 +3,7 @@
 const data = [
   {
     name: 'Cifrado Casar',
-    image: 'https://unsplash.it/700/500?random',
+    image: 'https://github.com/paula113/LIM012-cipher/blob/gh-pages/imagenes/Screen%20Shot%202020-07-20%20at%206.35.18%20pm.png?raw=true',
     descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
@@ -11,14 +11,14 @@ const data = [
   {
     name: 'Red Social',
     image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-31%20at%201.12.59%20pm.png?raw=true',
-    // descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
+    descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
   {
     name: 'md-Links',
     image: 'https://github.com/paula113/LIM012-fe-md-links/blob/master/img/--vaidate.png?raw=true',
-    // descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
+    descripton: 'Md-links está enfocada a validar links de un archivo markdown. Mediante peticiones HTTP al servidor. Validando sí, los links en el archivo existen y también incluye la opción \'stats\' que brinda las estadísticas de los links encontrados (total, únicos y rotos).',
     github: 'https://github.com/paula113/LIM012-fe-md-links',
     demo: 'https://github.com/paula113/LIM012-fe-md-links',
   },
@@ -35,7 +35,6 @@ const data = [
     github: 'https://github.com/paula113/LIM012-fe-social-network',
     demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
   },
-  
 ];
 
 const main = document.getElementById('main_content');
@@ -71,19 +70,19 @@ const perfil = (template, name) => {
   section.innerHTML = template;
   return section;
 };
+
 const renderImage = (str, name) => {
   const img = document.createElement('img');
+  img.setAttribute('id', str);
   img.className = name;
   img.src = str;
+  // if (atr) {
+  //   const a = document.createElement('a');
+  //   a.setAttribute('href', atr);
+  //   return a.appendChild(img);
+  // }
   return img;
 };
-
-
-// returns an iterable for promise all
-const iterable = (arr, name) => arr.map(icon => renderImage(icon, name));
-// appens all img to html
-const renderIcons = (arr, section) => Promise.all(arr)
-  .then(yes => yes.forEach(element => section.appendChild(element)));
 
 
 const profile = document.createElement('section');
@@ -117,7 +116,7 @@ const gallery = p => p.map((obj) => {
         <p class="caption">${obj.descripton}</p>
     <div class="see_pro">
     <a href=${obj.github}>
-    <img class="icons" src="https://raw.githubusercontent.com/paula113/Portfolio/master/images/gitHub.svg">
+    <img class="icon" src="https://raw.githubusercontent.com/paula113/Portfolio/master/images/gitHub.svg">
     </a>
     <a class="button" href=${obj.demo} target="_blank">Demo</a>
     </div>
@@ -127,6 +126,13 @@ const gallery = p => p.map((obj) => {
 
 // const collaboration = 'https://github.com/paula113/Portfolio/blob/master/images/collap.svg';
 
+// returns an iterable for promise all
+const iterable = (arr, name) => arr.map(icon => renderImage(icon, name));
+// appens all img to html
+const renderIcons = (arr, section) => Promise.all(arr)
+  .then(yes => yes.forEach(element => section.appendChild(element)));
+
+// const clssName = !!'icons';
 
 const icons = iterable(contactIcons, 'icons');
 const skilsIscons = iterable(skillsList, 'skillsIcons');
@@ -146,3 +152,28 @@ renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 skills.appendChild(title);
 gallery(data);
+
+// const contactArr = document.getElementsByClassNames('icons');
+// console.log(contactArr);
+
+  // const contactEl = document.getElementById('https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg');
+  // console.log(contactEl);
+// if (contactArr) {
+//   const contactEl = document.getElementById('https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg');
+//   console.log(contactEl);
+// }
+try {
+  Array.from(document.getElementsByClassName('icons')).forEach((item) => {
+    console.log(item);
+  });
+} catch (error) {
+  console.log(error);
+}
+
+
+
+// console.log(contactArr.forEach(e => console.log(e)));
+// for (let i = 0; i < contactArr.length; i += 1) {
+//   const element = contactArr[i];
+//   console.log(element);
+// }

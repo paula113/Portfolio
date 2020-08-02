@@ -147,6 +147,11 @@ h6{
     width: 2rem;
     height: 2rem;
 }
+.icon{
+  margin: .3rem;
+  width: 2rem;
+  height: 2rem;
+}
 .profile{
     display: flex;
     flex-direction: column;
@@ -248,7 +253,9 @@ h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .caption{
-    padding: .3rem;
+    padding: .5rem;
+    height: 260px;
+    /* text-align: left; */
 }
 .button{
     margin: .3rem;
@@ -348,8 +355,7 @@ h4{
     flex-wrap: wrap;
 }
 .article{
-    width: 25%;
-    /* height: 30%; */
+  width: 33%;
 }
 .skillsContainer{
   width: 50%;

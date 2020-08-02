@@ -9,11 +9,11 @@
 [![React](https://img.shields.io/badge/-React-%20%2380ced6)](https://cdnjs.com/libraries/reactstrap)
 
 
-I am a passionated Front-End Developer. I make fun, creative, open, and fast websites. I attempt to leave all of code I contact increasingly lucid, measured, performant and more accessible than I discovered it.
+I am a passionated Front-End Developer. I develop creative, fun, open, and fast websites.
+<!-- I attempt to leave all of code I contact increasingly lucid, measured, performant and more accessible than I discovered it. -->
 
 Working in a team, I help to set a more clear feeling of direction with an effective and efficient communication proficiency. I actively seek out new technologies and stay up-to-date on industry trends and advancements. 
 
-***
 
 ## Skills
 
@@ -23,24 +23,21 @@ Working in a team, I help to set a more clear feeling of direction with an effec
 - Adaptable and flexible attitude
 - Enjoy working in a team environment with the ability to work independently as need.
 
-***
 
 ## Projects
 
 #### Social Network:
 - [EducaChat](https://github.com/paula113/LIM012-fe-social-network) was developed for puzzled students attempting to find reliable resorces to solve their uncertainty. Moreover, it is for experience professional to convey their skills and knowledge.
 
-![RED SOCIAL](https://user-images.githubusercontent.com/60791273/81744247-9412ef80-9468-11ea-99af-e70fe69713ff.png)
 
 #### Md-Links:
 -  [Md-Links](https://github.com/paula113/LIM012-fe-md-links) is a library design to validate links in a markdown file. It was build for developers who will need to retrieve links from a directory with several varieties types of files. Md-Links, provides options to give more information about it.
 
-![MD-LINKS](https://github.com/paula113/LIM012-fe-md-links/blob/master/img/--vaidate.png?raw=true)
 
-<!-- ### ✔ BQ-API: -->
+<!-- #### BQ-API: -->
 
 <!-- ![BQ-API]() -->
 
-<!-- #### ✔ BQ-API-CLIENT: -->
+<!-- ##### BQ-API-CLIENT: -->
 
 <!-- ![BQ-API-CLIENT]() -->

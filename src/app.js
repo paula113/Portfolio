@@ -18,23 +18,24 @@ const data = [
   {
     name: 'md-Links',
     image: 'https://github.com/paula113/LIM012-fe-md-links/blob/master/img/--vaidate.png?raw=true',
-    descripton: 'Md-links está enfocada a validar links de un archivo markdown. Mediante peticiones HTTP al servidor. Validando sí, los links en el archivo existen y también incluye la opción \'stats\' que brinda las estadísticas de los links encontrados (total, únicos y rotos).',
+    descripton: 'Md-links está enfocada a validar links de un archivo markdown. Mediante peticiones HTTP al servidor. Validando sí, los links en el archivo existen y también incluye la opción \'stats\' que brinda las estadísticas de los links encontrados como: totalde link, links únicos y links rotos.',
     github: 'https://github.com/paula113/LIM012-fe-md-links',
     demo: 'https://github.com/paula113/LIM012-fe-md-links',
   },
   {
     name: 'BQ-API',
-    image: 'https://unsplash.it/700/500?random',
-    github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+    image: 'https://github.com/paula113/LIM012-fe-burger-queen-api/blob/dev/images/auth/get.png?raw=true',
+    descripton: 'Una API nos permite interactuar con los datos de una aplicacion, para este proyecto se nos requerio desarrollar una para un restaurante. Para desarrollar la API rest utilizamos Nodejs y Express, lo complementamos con un motor de base de datos mysql. Finalmente, para automatizar el despliegue de aplicaciones dentro de contenedores de software usamos docker. ',
+    github: 'https://github.com/paula113/LIM012-fe-burger-queen-api',
+    demo: 'http://134.122.82.187:8000',
   },
-  {
-    name: 'BQ-API Client',
-    image: 'https://unsplash.it/700/500?random',
-    // descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
-    github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
-  },
+  // {
+  //   name: 'BQ-API Client',
+  //   image: 'https://unsplash.it/700/500?random',
+  //   descripton: 'En este proyecto tiene como objetivo desarrollar una web progressive app utilizando React. Esta interfáz es la integracion con la API previamente desarrollada, según la solicitud de nuestra clienta ',
+  //   github: 'https://github.com/paula113/LIM012-fe-burger-queen-api-client/tree/dev',
+  //   demo: '',
+  // },
 ];
 
 const main = document.getElementById('main_content');
@@ -73,14 +74,40 @@ const perfil = (template, name) => {
 
 const renderImage = (str, name) => {
   const img = document.createElement('img');
-  img.setAttribute('id', str);
+  const div = document.createElement('div');
+  const a = document.createElement('a');
+  const popupText = document.createElement('span');
+  popupText.textContent = 'paulapierina96@gmail.com';
+  popupText.className = 'popupText';
   img.className = name;
-  img.src = str;
-  // if (atr) {
-  //   const a = document.createElement('a');
-  //   a.setAttribute('href', atr);
-  //   return a.appendChild(img);
-  // }
+  switch (str) {
+    case contactIcons[0]:
+      img.src = str;
+      img.setAttribute('id', 'linkedIn');
+      a.appendChild(img);
+      a.setAttribute('href', 'https://www.linkedin.com/in/paula-p-18a227196/');
+      return a;
+    case contactIcons[1]:
+      img.src = str;
+      img.setAttribute('id', 'email');
+      div.classList.add('popup');
+      div.appendChild(img);
+      div.appendChild(popupText);
+      div.addEventListener('click', () => {
+        console.log('hola');
+        popupText.classList.toggle('show');
+      });
+      return div;
+    case contactIcons[2]:
+      img.src = str;
+      img.setAttribute('id', 'github');
+      a.appendChild(img);
+      a.setAttribute('href', 'https://github.com/paula113');
+      return a;
+    default:
+      img.src = str;
+      break;
+  }
   return img;
 };
 
@@ -95,6 +122,9 @@ contact.className = 'contact';
 const skills = document.createElement('section');
 skills.setAttribute('id', 'Habilidades');
 skills.className = 'skills';
+
+const wrapper = document.createElement('div');
+wrapper.className = 'skillsWrapper';
 
 const skillsContainer = document.createElement('div');
 skillsContainer.className = 'skillsContainer';
@@ -127,7 +157,7 @@ const gallery = p => p.map((obj) => {
 // const collaboration = 'https://github.com/paula113/Portfolio/blob/master/images/collap.svg';
 
 // returns an iterable for promise all
-const iterable = (arr, name) => arr.map(icon => renderImage(icon, name));
+const iterable = (arr, name, arrId) => arr.map(icon => renderImage(icon, name, arrId));
 // appens all img to html
 const renderIcons = (arr, section) => Promise.all(arr)
   .then(yes => yes.forEach(element => section.appendChild(element)));
@@ -136,6 +166,7 @@ const renderIcons = (arr, section) => Promise.all(arr)
 
 const icons = iterable(contactIcons, 'icons');
 const skilsIscons = iterable(skillsList, 'skillsIcons');
+
 
 main.appendChild(profile);
 profile.appendChild(perfil(sayHi, 'sayHi'));
@@ -146,34 +177,13 @@ profile.appendChild(perfil(description, 'descDiv'));
 main.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/collabs.png?raw=true', 'collabs'));
 main.appendChild(skills);
 skills.innerHTML = '<h1 class="title">Habilidades</h1>';
-skills.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/web_scan.png?raw=true', 'webScan'));
-skills.appendChild(skillsContainer);
+skills.appendChild(wrapper);
+wrapper.appendChild(renderImage('https://github.com/paula113/Portfolio/blob/master/images/web_scan.png?raw=true', 'webScan'));
+
+wrapper.appendChild(skillsContainer);
+// skills.appendChild(skillsContainer);
 renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 skills.appendChild(title);
 gallery(data);
 
-// const contactArr = document.getElementsByClassNames('icons');
-// console.log(contactArr);
-
-  // const contactEl = document.getElementById('https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg');
-  // console.log(contactEl);
-// if (contactArr) {
-//   const contactEl = document.getElementById('https://raw.githubusercontent.com/paula113/Portfolio/master/images/linkedIn.svg');
-//   console.log(contactEl);
-// }
-try {
-  Array.from(document.getElementsByClassName('icons')).forEach((item) => {
-    console.log(item);
-  });
-} catch (error) {
-  console.log(error);
-}
-
-
-
-// console.log(contactArr.forEach(e => console.log(e)));
-// for (let i = 0; i < contactArr.length; i += 1) {
-//   const element = contactArr[i];
-//   console.log(element);
-// }

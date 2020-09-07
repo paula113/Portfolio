@@ -33,11 +33,14 @@ a {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    font-size: 1.5rem;
+
   }
   
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #BCB2F9;
+    color: #27168C;
   }
   
   .header .logo {
@@ -124,6 +127,68 @@ a {
   
   /* 48em = 768px */
   
+  /* POPIP CONTAINER*/
+
+  .popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+  }
+  /* THE ACTUAL POPUP */
+  .popup .popupText {
+    visibility: hidden;
+    width: 217px;
+    background-color: #27168C;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 10%;
+    margin-left: -90px;
+
+  }
+/* POPUP ARROW */
+.popup .popupText::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #27168C transparent
+  transparent transparent;
+}
+
+.popup .popupText::after ::selection {
+  color: red;
+  background: yellow;
+}
+/* TOGGLE THIS CLASS - HIDE AND SHOW THE POPUP */
+.popup .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* ADD ANIMATION (FADE IN THE POPUP) */
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
 
 /* -------------------- */
 .main{
@@ -222,6 +287,7 @@ h6{
     margin: 2rem;
     border: 2px solid #6A8594;
     text-align: center;
+    width: 90%;
     background-color: aliceblue;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -242,7 +308,7 @@ h6{
 }
 .p_img{
   margin-top: .5rem;
-  width: 90%;
+  /* width: 90%; */
   /* width: 320px; */
   height: 200px;
 }
@@ -254,7 +320,7 @@ h4{
 }
 .caption{
     padding: .5rem;
-    height: 260px;
+    /* height: 260px; */
     /* text-align: left; */
 }
 .button{
@@ -321,7 +387,7 @@ h4{
 }
 .collabs{
   display: block;
-  margin: auto;
+  margin: 5rem 20.3rem;
   margin-bottom: 100px;
   height: 250px;
   width: 400px;
@@ -343,6 +409,7 @@ h4{
     left: 20%;
     top: 15%;
     border-radius: 0%;
+    width: 28%;
 } 
 .descDiv {
     width: 30%;
@@ -355,7 +422,7 @@ h4{
     flex-wrap: wrap;
 }
 .article{
-  width: 33%;
+  width: 33.33%;
 }
 .skillsContainer{
   width: 50%;
@@ -368,12 +435,18 @@ h4{
   margin: .5rem;
 }
 .projects{
+  /* background-color: aqua; */
     padding: 3rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.skillsWrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 5rem auto;
+}
+}
 /* .webScan{
   background: url(undraw_real_time_collaboration_c62i.png);
 transform: matrix(-1, 0, 0, 1, 0, 0);

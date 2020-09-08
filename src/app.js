@@ -55,8 +55,8 @@ const skillsList = ['https://raw.githubusercontent.com/paula113/Portfolio/master
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/html-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/firebase-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/sql-Svg.svg',
-  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/docker-brands.svg',
-  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/figma-brands.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/Group 4docker-color.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/Group 3figma-title.svg',
 ];
 // 'https://unsplash.it/700/500?random'
 

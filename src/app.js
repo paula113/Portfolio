@@ -50,6 +50,7 @@ const contactIcons = ['https://raw.githubusercontent.com/paula113/Portfolio/mast
 
 const skillsList = ['https://raw.githubusercontent.com/paula113/Portfolio/master/images/reactSvg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/css-Svg.svg',
+  'https://raw.githubusercontent.com/paula113/Portfolio/master/images/sass-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/node-Svg.svg',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/Screen%20Shot%202020-07-31%20at%201.01.16%20pm.png',
   'https://raw.githubusercontent.com/paula113/Portfolio/master/images/html-Svg.svg',

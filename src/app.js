@@ -67,7 +67,7 @@ const sayHi = `
 <h1 class="title">Paula Paredes</h1>
 `;
 
-// Body
+// Body hola
 const perfil = (template, name) => {
   const section = document.createElement('div');
   section.className = name;

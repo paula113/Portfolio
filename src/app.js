@@ -32,6 +32,7 @@ const data = [
   // {
   //   name: 'BQ-API Client',
   //   image: 'https://unsplash.it/700/500?random',
+  // eslint-disable-next-line max-len
   //   descripton: 'En este proyecto tiene como objetivo desarrollar una web progressive app utilizando React. Esta interfáz es la integracion con la API previamente desarrollada, según la solicitud de nuestra clienta ',
   //   github: 'https://github.com/paula113/LIM012-fe-burger-queen-api-client/tree/dev',
   //   demo: '',

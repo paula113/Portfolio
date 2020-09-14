@@ -2,18 +2,18 @@
 
 const data = [
   {
-    name: 'Cifrado Casar',
+    name: 'Cifrado Cesar',
     image: 'https://github.com/paula113/LIM012-cipher/blob/gh-pages/imagenes/Screen%20Shot%202020-07-20%20at%206.35.18%20pm.png?raw=true',
     descripton: 'Este proyecto fue enfocado para ayudar a los clientes del banco generando contraseñas con palabras fáciles de recordar. Desarrollado con la técnica del desplazamiento César.',
-    github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+    github: 'https://github.com/paula113/LIM012-cipher',
+    demo: 'https://paula113.github.io/LIM012-cipher/src/',
   },
   {
     name: 'Red Social',
     image: 'https://github.com/paula113/Portfolio/blob/master/images/Screen%20Shot%202020-07-31%20at%201.12.59%20pm.png?raw=true',
     descripton: 'Esta plataforma interactiva permitirá a nuestro target usuario registrarse con su correo electrónico o por su cuenta de gmail. Los usuarios de EducaChat podrán compartir conocimientos a través de publicaciones, también les permitirá compartir imágenes. Podrán editar, borrar y configurar la privacidad de su publicación.',
     github: 'https://github.com/paula113/LIM012-fe-social-network',
-    demo: 'https://paula113.github.io/lim012-fe-social-network/src/',
+    demo: 'https://paula113.github.io/LIM012-fe-social-network/src/',
   },
   {
     name: 'md-Links',

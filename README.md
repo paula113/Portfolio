@@ -36,6 +36,7 @@ Working in a team, I help to set a more clear feeling of direction with an effec
 
 <!-- #### BQ-API: -->
 
+
 <!-- ![BQ-API]() -->
 
 <!-- ##### BQ-API-CLIENT: -->

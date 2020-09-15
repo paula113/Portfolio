@@ -138,7 +138,7 @@ a {
   /* THE ACTUAL POPUP */
   .popup .popupText {
     visibility: hidden;
-    width: 217px;
+    width: 317px;
     background-color: #27168C;
     color: #fff;
     text-align: center;
@@ -148,7 +148,8 @@ a {
     z-index: 1;
     bottom: 125%;
     left: 10%;
-    margin-left: -90px;
+    margin-left: -140px;
+    font-size: 1.3rem;
 
   }
 /* POPUP ARROW */
@@ -199,6 +200,7 @@ h6{
     margin-top: 5rem;
     /* margin: 5rem; */
     padding-left: 5%;
+    font-size: 1.3rem;
 }
 .myPic{
     margin-top: 1rem;
@@ -240,6 +242,7 @@ h6{
 .description {
     padding: 1rem;
     text-align: left;
+    font-size: 1.3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .collabs{
@@ -288,7 +291,7 @@ h6{
     border: 2px solid #6A8594;
     text-align: center;
     /* width: 90%; */
-    height: 30rem;
+    /* height: 30rem;  */
     background-color: aliceblue;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -312,6 +315,7 @@ h6{
   /* width: 90%; */
   /* width: 320px; */
   height: 200px;
+  width: 15em;
 }
 h4{
     color: #27168C;
@@ -323,6 +327,7 @@ h4{
     padding: .5rem;
     /* height: 260px; */
     /* text-align: left; */
+    font-size: 1.2rem;
 }
 .button{
     margin: .3rem;
@@ -376,6 +381,7 @@ h4{
     }
     h6{
         text-align: left;
+
     }
     .title{
         margin: 0;

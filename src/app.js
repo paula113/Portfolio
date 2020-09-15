@@ -189,4 +189,3 @@ renderIcons(skilsIscons, skillsContainer);
 main.appendChild(projects);
 skills.appendChild(title);
 gallery(data);
-
